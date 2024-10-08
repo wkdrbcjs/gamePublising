@@ -1,10 +1,10 @@
 # Game Publising Site
-```
+
 CLI : Nuxt3 https://nuxt.com/
 SVR : nitro(Nuxt3 기능) https://nuxt.com/docs/guide/concepts/server-engine
 DB  : supabase  https://supabase.com/ 
 
-```
+
 
 
 
