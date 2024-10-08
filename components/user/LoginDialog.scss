@@ -1,0 +1,68 @@
+
+.loginDialog{
+  width: 100%;
+  max-width: 420px;
+
+  &.notLoginPopup{
+    width: 380px;
+    max-width: 380px;
+  }
+
+  .dialogCardArea{
+    border-radius: 10px !important;
+
+    >.close_icon{
+      position: absolute; 
+      margin: 15px; 
+      top: 0px; 
+      right:0px;
+      cursor: pointer;
+    }
+    >.card_Title{
+      margin: 10px 0px 0px;
+    }
+
+    >.card_text{
+      ._form{
+        .h3_title{
+          font-size: 13px;
+          &._space{
+            font-size: 13px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+          }
+          &.logout_title{
+            font-size: 18px;
+            margin: 5px 0px 15px;
+          }
+        }
+        .h3_text{
+          font-size: 15px; 
+          margin: 15px 0px;
+        }
+
+        .v-btn{
+         .login_icon{
+           width: 24px;
+           height: 24px;
+         }
+        }
+
+        >.logoutBtnArea{
+          display: flex;
+          justify-content: space-between;
+          .cancelBtn{
+              width: 135px;
+          }
+          .confirmBtn{
+            width: 135px;
+          }
+        }
+        
+      }
+        
+    }
+  }
+
+}

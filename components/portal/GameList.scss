@@ -1,0 +1,55 @@
+.gamelist{
+  //border: 1px blue solid;
+  width: 100%;
+  padding: 5px;
+
+  .title_text{
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px black solid;
+  }
+
+  .listContainer{
+    margin: 10px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+    .outBox{
+      margin: 0px auto;
+      width: 95%;
+      max-width: 185px;
+      padding: 15px 15px 0px;
+      border: 2px rgb(231, 231, 231) solid;
+
+      .v-img{
+        width: 100%;
+      }
+
+      .gameTitle{
+        margin: 5px 0px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .gameDesc{
+        margin: 5px 0px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+  @media screen and (max-width:480px) {
+    .listContainer{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .goTotop{
+    text-align: end;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}

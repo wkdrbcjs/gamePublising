@@ -1,0 +1,50 @@
+.v_footer {
+  max-height: fit-content;
+  
+
+  .row_default {
+    text-align: center;
+
+    .col_default {
+      margin-top: 30px;
+
+      .text_company_links {
+        display: inline-block; 
+        text-align: left;
+        :last-child {
+          margin-bottom: 30px;
+        }
+
+        .text_company {
+          font-size: 16px;
+          font-weight: 500;
+        }
+  
+        .text_link {
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .text_copylight{
+          margin-top: 35px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.v_list_style {
+  padding: 0px;
+
+  .list_item {
+    background-color:#242742;
+    padding: 10px 16px 0px;
+
+    .item_title{
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 5px 15px 10px;
+    }
+  }
+}

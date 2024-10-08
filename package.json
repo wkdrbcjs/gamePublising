@@ -3,15 +3,35 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "local": "nuxt dev --dotenv .env.local",
+    "dev": "nuxt dev --dotenv .env.dev",
+    "prod": "nuxt dev --dotenv .env.prod",
     "build": "nuxt build",
-    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "supabase": "supabase"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxt/image": "^1.8.0",
+    "@nuxtjs/supabase": "^1.4.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.5.4",
+    "@supabase/ssr": "^0.5.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
     "nuxt": "^3.13.0",
+    "swiper": "^11.1.14",
+    "vite-plugin-vuetify": "^2.0.4",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-toast-notification": "^3.1.3",
+    "vuetify": "^3.7.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "sass": "^1.79.4",
+    "supabase": "^1.200.3"
   }
 }

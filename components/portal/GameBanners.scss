@@ -1,0 +1,32 @@
+.gamebanners{ 
+  // padding: 10px;
+  text-align: center;
+
+  .swiperArea{
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    //padding-bottom: 30px;  // 페이지네이션을 위한 공간 확보
+
+    
+    .swiper-button-prev, .swiper-button-next{
+      color: white;
+    }
+
+    .swiper-pagination{
+      margin-top: 20px;
+      position: relative;
+
+      .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        margin: 0px 8px;
+        &-active{
+          background-color: #ff5858;
+        }
+      }
+    }
+
+  }
+
+}
