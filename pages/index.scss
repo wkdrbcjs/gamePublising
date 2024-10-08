@@ -1,0 +1,52 @@
+
+.portal{
+  max-width: 860px;
+  padding: 5px;
+  width: 100%;
+  margin: 0px auto;
+
+  .rows{
+    padding: 5px 10px;
+
+    .sideEvent{
+      min-width: 100px;
+      width: fit-content;
+      padding: 10px 10px;   //  gameBanner_main의 margin-top이랑 맞추기
+      display: none;
+    }
+    
+    @media screen and (min-width: 768px){
+      .sideEvent{
+        display:block;
+      }
+    }
+    
+    .portalMain{
+      // max-width: 650px;
+      padding: 0px 10px;
+      margin: 0px auto;
+      border: 1px red solid;
+
+      .gameBanner_main{
+        margin: 10px 0px 20px;
+
+
+      }
+      .loginBox_main{
+        margin: 20px 0px;
+
+      }
+      .newsBox_main{
+        margin: 20px 0px;
+
+      }
+      
+      .gameList_main{
+        margin: 20px 0px;
+
+      }
+
+    }
+  }
+
+}
