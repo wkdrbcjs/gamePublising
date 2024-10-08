@@ -1,22 +1,26 @@
 # Game Publising Site
 
 ### CLI 
-- Nuxt3 https://nuxt.com/
+- Nuxt3 (https://nuxt.com/)
+- Vue3 (https://ja.vuejs.org/)
+- Vuetify (https://vuetifyjs.com/en/getting-started/installation/)
 
 ### SVR 
-- nitro(Nuxt3 기능) https://nuxt.com/docs/guide/concepts/server-engine
+- nitro (https://nuxt.com/docs/guide/concepts/server-engine)
+-- 서버리스 구현
 
-### DB 
-- supabase  https://supabase.com/ 
+### DB, Auth, Store...
+- supabase  https://supabase.com/
+
+### 배포
+- vercel
+-- supabase와 호환성이 좋음
 
 
 
 
 
-
-
-# Nuxt 3 Minimal Starter
-
+# Start
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
