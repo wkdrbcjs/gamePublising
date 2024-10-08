@@ -10,7 +10,7 @@
 -- 서버리스 구현
 
 ### DB, Auth, Store...
-- supabase  https://supabase.com/
+- supabase (https://supabase.com/)
 
 ### 배포
 - vercel
