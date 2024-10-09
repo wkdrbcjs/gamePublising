@@ -1,7 +1,7 @@
 
 <script setup lang="ts">
 import './LoginDialog.scss'
-import type {IUser,IRes, ISignRes} from '~/interfaces/userInfo.interface'
+import type {IUser} from '~/interfaces/userInfo.interface'
 
 import { validationRules as getValidationRules } from '@/tools/validationRules';
 import { useAuthStore } from '~/stores/auth'
@@ -177,6 +177,7 @@ const loginWithEmail = async () => {
       }
       // 정상적으로 auth 생성이 된 경우 -- signup추가 해야됨
       else {
+        await authStore.signUp(login_email.value, login_pw.value)
         // 메일 인증을 해달라고 표시
         showCheckEmail.value = true
         return
@@ -208,7 +209,9 @@ const clickLoginWithGoogle= async() => {
   await authStore.loginWithGoogle()
   let userSession = await authStore.fetchSession()
   console.log('구글 로그인 후 세션 확인:', userSession)
-  if(authStore.user) $toast.success('musubi Gamesへようこそ!')
+  if(authStore.user) {
+    $toast.success('musubi Gamesへようこそ!')
+  }
 }
 
 

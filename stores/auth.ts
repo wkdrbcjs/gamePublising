@@ -15,7 +15,10 @@ export const useAuthStore = defineStore('auth', () => {
     const { data,error } = await supabase_client.auth.getSession()
     session.value = data.session
     user.value = data.session?.user ?? null
-    return {user: user.value, session: session.value}
+    return {
+      user: user.value, 
+      session: session.value
+    }
   }
 
   // 이메일 및 패스워드로 로그인
@@ -91,9 +94,18 @@ export const useAuthStore = defineStore('auth', () => {
     // return data.url
   }
 
+  const signUp = async (email:string, pwd:string) => {
+    const { data, error } = await supabase_client.auth.signUp({
+      email:email,
+      password: pwd
+    })
+    if (error) {throw error}
+    return data
+  }
+
   const signOut = async () => {
     const { error } = await supabase_client.auth.signOut()
-    if (error) throw error
+    if (error) {throw error}
     session.value = null
     user.value = null
   }
@@ -117,6 +129,7 @@ export const useAuthStore = defineStore('auth', () => {
     loginWithGoogle,
     supaBaseAuthCreate,
     resendAuthMail,
+    signUp,
     signOut
   }
 })
