@@ -86,6 +86,8 @@ const clickLogOut= async()=>{
             <span @click="clickLogin()">ログイン</span>
           </v-btn>
 
+<!-- 리프레시를 해도 로그인 로그아웃 -->
+
           <v-btn v-else class="d-flex sign_btn">
             <span @click="clickLogOut()">ログアウト</span>
           </v-btn>
